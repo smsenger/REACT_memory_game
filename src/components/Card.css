@@ -1,0 +1,7 @@
+.Card {
+    max-width: 150px;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px black;
+    padding: 10px;
+    margin: 10px;
+}
