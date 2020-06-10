@@ -3,31 +3,20 @@ import '../App.css';
 import './MemoryCard.css';
 import React, { Component } from 'react';
 
-
-
 class MemoryCard extends Component {
-    constructor() {
-        super()
-        this.state={ isFlipped:false }
-    }
-
-    clickHandler() {
-        this.setState({ isFlipped: !this.state.isFlipped});
-    }
-
     render() {
         let innerClass = "MemoryCard_inner"
-        if(this.state.isFlipped) {
+        if(this.props.isFlipped) {
             innerClass += " flipped";
         }
         return (
-            <div className="MemoryCard" onClick={this.clickHandler.bind(this)}>
+            <div className="MemoryCard" onClick={this.props.pickCard}>
                 <div className={innerClass}>
                     <div className="MemoryCard_back">
-                        <img src="../cartoon-pow.png" alt="pow! star"></img>
+                        <img src="../spacecat.png" alt="cat in space"></img>
                     </div>
                     <div className="MemoryCard_front">
-                    ∆
+                    {this.props.symbol}
                     </div>
                 </div>
             </div>
