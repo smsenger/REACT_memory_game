@@ -1,0 +1,25 @@
+* {
+    font-family: 'Teko', sans-serif;
+}
+
+button {
+    background-color: #032c52;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    padding-right: 7px;
+    padding-left: 7px;
+}
+
+input {
+    border-radius: 10px;
+    border: 1px solid #06539f;
+    margin-right: 2px;
+    margin-left: 2px;
+    width: 100px;
+    color: #06539f;
+}
+
+span {
+    color: #06539f;
+}

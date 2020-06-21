@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 // import React from 'react';
 import MemoryCard from './components/MemoryCard.js'
 import './App.css';
-// import 'bootstrap/dist/css/bootstrap.css';  //no dot or slash = node module folder
-// import { Container, Row, Col } from 'react-bootstrap';
+import Stepper from './components/Stepper'
 
 function generateDeck() {
   const symbols = ['∆', 'ß', '£', '§', '•', '$', '+', 'ø'];
@@ -131,6 +130,7 @@ class App extends Component {
         <div>
           { this.state.won && <button onClick={ this.handleClick }>Play Again!!!!</button>}
         </div>
+        <Stepper />
       </div>
     );
   }
